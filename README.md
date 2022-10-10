@@ -7,6 +7,4 @@ There are three main parts to this project:
 - Using CMake, a tool that allows one to create an executable file for different platforms.
 - Using ImGui by setting up a basic window with various sample buttons and sliders.
 
-![Changing the rendered screen with a color picker][Imgui image]
-
-[Imgui image]: https://raw.githubusercontent.com/Malcolm-G/Using-DearImGui/main/Images/ImGui_image.png "Sample Image"
+![Changing the rendered screen with a color picker](https://raw.githubusercontent.com/Malcolm-G/Using-DearImGui/main/Images/ImGui_image.png)
