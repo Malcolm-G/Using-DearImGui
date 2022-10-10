@@ -1,6 +1,7 @@
 # Using-DearImGui
 
 This project is an attempt to use DearImGui, a C++ GUI library that uses OpenGL to render 2D and 3D graphics.
+The goal is to eventually integrate ImGui in a GUI application whereby ImGui will provide the necessary buttons for a user to control the application.
 There are three main parts to this project:
 
 - Using vcpkg, which is a C++ packet manager.
