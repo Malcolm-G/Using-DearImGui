@@ -9,4 +9,4 @@ There are three main parts to this project:
 
 ![Changing the rendered screen with a color picker][Imgui image]
 
-[Imgui image]: https://raw.githubusercontent.com/Malcolm-G/Using-DearImGui/main/Images/ImGui-Sample-snap.PNG "Sample Image"
+[Imgui image]: https://raw.githubusercontent.com/Malcolm-G/Using-DearImGui/main/Images/ImGui_image.png "Sample Image"
