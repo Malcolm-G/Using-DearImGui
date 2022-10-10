@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-vcpkg",
+      "appliesTo": "vcpkg.json",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-CMakeSettings",
+      "appliesTo": "CMakeSettings.json",
+      "type": "launch"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+Package: vcpkg-cmake-config
+Version: 2022-02-06
+Port-Version: 1
+Architecture: x64-windows
+Multi-Arch: same
+Abi: de9d14cc762c285191da0f9d84e3666c65b6d6d12301b6261aba07af34b4edd8
+Type: Port
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2022-08-18
+Architecture: x64-windows
+Multi-Arch: same
+Abi: b9ea295901e6f13d1c7c3929b74756af60968113e927e38af4ba544e2efa5e7a
+Type: Port
+Status: install ok installed
+
+Package: egl-registry
+Version: 2021-11-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 601b9c09b327eaf871c2162655b1bf0a21bea024533f722cedf9e4ef7bf00037
+Description: the EGL API and Extension Registry
+Type: Port
+Status: install ok installed
+
+Package: opengl-registry
+Version: 2021-11-17
+Depends: egl-registry
+Architecture: x64-windows
+Multi-Arch: same
+Abi: beac8bff74932687a2b15cea437d7afc6829a7d014ca2b8e38cf473c0b239ebd
+Description: the API and Extension registries for the OpenGL family APIs
+Type: Port
+Status: install ok installed
+
+Package: glad
+Version: 0.1.36
+Depends: egl-registry, opengl-registry, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 8e28520fcabe8e8bfb168a4f62d6a7bacf25efa50b0cd70bd428838a2b6c5351
+Description: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs.
+Type: Port
+Default-Features: loader
+Status: install ok installed
+
+Package: glad
+Feature: loader
+Architecture: x64-windows
+Multi-Arch: same
+Description: Generate loader logic.
+Type: Port
+Status: install ok installed
+
+Package: glfw3
+Version: 3.3.8
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 37d79df7ab4a9e9d0e58239b2c02ca916cffdbf8cc2858b6788fcfe897188188
+Description: GLFW is a free, Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development. It provides a simple, platform-independent API for creating windows, contexts and surfaces, reading input, handling events, etc.
+Type: Port
+Status: install ok installed
+
+Package: imgui
+Version: 1.88
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 201f898324805dcf43d69d30a130a7875248998b51319f15d006561fa88ceb2e
+Description: Bloat-free Immediate Mode Graphical User interface for C++ with minimal dependencies.
+Type: Port
+Status: install ok installed
+
+Package: imgui
+Feature: glfw-binding
+Depends: glfw3
+Architecture: x64-windows
+Multi-Arch: same
+Description: Make available GLFW binding
+Type: Port
+Status: install ok installed
+
+Package: imgui
+Feature: opengl3-binding
+Architecture: x64-windows
+Multi-Arch: same
+Description: Make available OpenGL3/ES/ES2 (modern) binding
+Type: Port
+Status: install ok installed
+

@@ -1,0 +1,23 @@
+Detecting compiler hash for triplet x64-windows...
+All requested packages are currently installed.
+Restored 0 package(s) from C:\Users\User\AppData\Local\vcpkg\archives in 343.7 us. Use --debug to see more details.
+
+Total elapsed time: 4.578 s
+glad provides CMake targets:
+
+    # this is heuristically generated, and may not be correct
+    find_package(glad CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE glad::glad)
+
+glfw3 provides CMake targets:
+
+    # this is heuristically generated, and may not be correct
+    find_package(glfw3 CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE glfw)
+
+imgui provides CMake targets:
+
+    # this is heuristically generated, and may not be correct
+    find_package(imgui CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE imgui::imgui)
+
